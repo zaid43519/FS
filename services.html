@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <title>The Fund Investment Services - Services</title>
+  <style>
+.forms-section
+ {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 800px; 
+  border-radius: 10px;
+  background-color: rgb(255, 252, 252);
+}
+
+.forms-section h2 
+{
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.forms-section p 
+{
+  text-align: center; 
+  margin-bottom: 30px; 
+}
+
+.form-links-container
+ {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.form-card 
+{
+  background-color: #9ef5b0; 
+  border-radius: 10px; 
+  flex: 1 1 300px; 
+  max-width: 300px; 
+  text-align: center; 
+}
+
+.form-link 
+{
+  display: block; 
+  padding: 15px;
+  color: black; 
+  text-decoration: none; 
+  border-radius: 10px; 
+  transition: background-color 0.3s; 
+}
+
+.form-link:hover 
+{
+  background-color: rgb(115, 119, 124); 
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f7f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(191, 187, 187);
+  border-radius: 8px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 1em;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #49e9e9;
+  box-shadow: 0 0 5px rgba(141, 223, 223, 0.4);
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #4736dd;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  font-family: "Poppins";
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+  background-color:rgb(234, 237, 237); ;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar Start -->
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark px-lg-3 py-lg-2 shadow-sm">
+    <div class="container-fluid">
+      <img id="logo" src="img/logo fis.jpeg" alt="">
+        <a id="heading1" class="navbar-brand me-5 fw-bold fs-2 h1-font" href="index.html">THE FUND INVESTMENT SERVICES</a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5.5">
+                <li class="nav-item">
+                    <a class="nav-link me-2" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-2 " href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-2 active" href="services.html#frm">Forms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-2" href="management.html">Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+            <a href="https://wa.link/jeuytx" target="_blank" class="btn btn-success  border-2 me-4">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/thefundinvestmentservices/?igsh=bGlqbHg2Z3MyaGp6" target="_blank" class="btn btn-danger  border-2 me-4">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+                <button  type="button" class="btn btn-warning text-dark border-2 me-lg-2 "><a 
+                class="text-decoration-none text-dark" href="mailto:rashid.281989@gmail.com"  target="_blank" >
+                <i class="fa-solid fa-envelope"></i>  
+                </button></a>
+              
+            </div>
+        </div>
+    </div>
+</nav>
+
+<hr>
+<!-- TICKER -->
+<section class="ticker_section bg-light pt-2 ">
+  <marquee onMouseOver="this.stop()" onMouseOut="this.start()">
+      <ul class="tickers">
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">SENSEX</span>
+                      <span class="price">81688.45</span>
+                      <span class="difference_percent">
+                                                              -808.65                                    (-0.99%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">NIFTY 50</span>
+                      <span class="price">25014.6</span>
+                      <span class="difference_percent">
+                                                              -235.5                                    (-0.94%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">GOLD</span>
+                      <span class="price">77845</span>
+                      <span class="difference_percent">
+                                                              -220                                    (-0.28%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">SILVER</span>
+                      <span class="price">98000</span>
+                      <span class="difference_percent">
+                                                              -100                                    (-0.1%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrup ">
+                      <span class="name">NASDAQ</span>
+                      <span class="price">18013.98</span>
+                      <span class="difference_percent">
+                                                              440.68                                    (2.45%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">FTSE</span>
+                      <span class="price">8280.63</span>
+                      <span class="difference_percent">
+                                                              -1.89                                    (-0.02%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrup ">
+                      <span class="name">Nikkei</span>
+                      <span class="price">38635.62</span>
+                      <span class="difference_percent">
+                                                              83.56                                    (0.22%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrup ">
+                      <span class="name">Crude</span>
+                      <span class="price">6126.00</span>
+                      <span class="difference_percent">
+                                                              36                                    (0.7%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">USD/INR</span>
+                      <span class="price">84.03</span>
+                      <span class="difference_percent">
+                                                              -0.01                                    (-0.01%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrup ">
+                      <span class="name">EURO</span>
+                      <span class="price">92.54</span>
+                      <span class="difference_percent">
+                                                              0.27                                    (0.29%)
+                                                      </span>
+                  </li>
+                                  <li class="ticker_item mrdown ">
+                      <span class="name">POUND</span>
+                      <span class="price">110.26</span>
+                      <span class="difference_percent">
+                                                              -0.07                                    (-0.06%)
+                                                      </span>
+                  </li>
+                                      <li class="ticker_item mrup ">
+                      <span class="name">YEN</span>
+                      <span class="price">0.57</span>
+                      <span class="difference_percent">
+                                                              0.01                                    (1.75%)
+                                                      </span>
+                  </li>
+                      </ul>
+  </marquee>
+</section>
+<!-- /TICKER -->        <section class="main_banner position-relative">
+
+<!--Calculator  1 Start-->
+
+  <h2 style="color: white; margin-top:60px; font-size: 40px; width: 100%; text-align: center; margin-bottom: 50px;" class="h1-font fw-bold">SIP Calculator</h2>
+  <div class="bd" style="height: 600px;">
+  <div class="calculator mb-0 mt-0">
+    <div class="inputs">
+
+        <h3>Returns Estimator</h3>
+        <label>Monthly Investment (₹):</label>
+        <input type="number" id="monthlyInvestment">
+        
+        <label>Duration (Years):</label>
+        <input type="number" id="duration"  min="1" max="30">
+        
+        <label>Step Up (Annually, %):</label>
+        <input type="number" value="0" id="stepUp"  min="0" max="30">
+        
+        <label>Expected Rate of Return (%):</label>
+        <input type="number" id="rateOfReturn"  min="1" max="30">
+        
+        <button class="calculate-btn" onclick="calculateSIP()">Calculate</button>
+    </div>
+    <div class="results">
+        <h2>Total Value after <span id="years">5</span> Years</h2>
+        <h2>₹ <span id="totalValue" style="font-weight: bold; font-size: 28px;">0</span></h2>
+        <div class="pie-chart">
+        </div>
+
+        <p>Invested Amount: ₹ <span id="investedAmount">0</span></p>
+        <p>Est. Returns: ₹ <span id="estimatedReturns">0</span></p>
+
+    </div>
+  </div>
+  </div>
+
+<!-- Goal Based Calculator Start -->
+<h2 style="color: white; margin-top:60px; font-size: 40px; width: 100%; text-align: center; margin-bottom: 50px;" class="h1-font fw-bold">Goal Based Calculator</h2>
+
+<div class="container" style="background-color: rgb(234, 237, 237); height: 600px; margin-top: 70px; border-radius: 8px;">
+
+  <label for="goalAmount" style="padding-top: 40px;">Target Amount (₹):</label>
+  <input type="number" id="goalAmount" placeholder="Enter your goal amount" />
+
+  <label for="investmentYears">Investment Period (Years):</label>
+  <input type="number" id="investmentYears" placeholder="Enter number of years" />
+
+  <label for="expectedReturn">Expected Annual Return (%):</label>
+  <input type="number" id="expectedReturn" placeholder="Enter expected return" />
+
+  <label for="investmentType">Investment Type:</label>
+  <select id="investmentType">
+    <option value="sip">SIP (Monthly Investment)</option>
+    <option value="lumpsum">Lump Sum</option>
+  </select>
+ <br> <br>
+  <button onclick="calculate()">Calculate</button>
+
+  <div class="result" id="result">
+  </div>
+</div>
+<!-- Goal Based Calculator  End-->
+
+
+<!---- forms -->
+
+<h2 class="h1-font fw-bold text-center text-white" style="margin-top: 50px;">FORMS</h2>
+
+<div class="container-fluid" style="background-color: rgb(231, 233, 237);">
+  <div id="frm" class="forms-section">
+    <h2>Download Forms</h2>
+    <p>Click on the links below to download the required form:</p>
+
+    <div id="frm" class="form-links-container">
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/ctf_blank-2.pdf" class="form-link" download>COMMON TRANSACTION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/CKYC and KRA KYC Form 2024 V6 182024 (1).pdf" class="form-link" download>KYC FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/uti mf form.pdf" class="form-link" download>UTI COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/ITI-Common-Application-Form-with-SIP.pdf" class="form-link" download>ITI COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/PPFAS Mutual Fund.pdf" class="form-link" download>PARAG PARIKH COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/Mahindra form.pdf" class="form-link" download>MAHINDRA MANULIFE COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/franklin-common-_equity-new.pdf" class="form-link" download>FRANKLIN INDIA COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/dsp mutual funds.pdf" class="form-link" download>DSP COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/mira asset.pdf" class="form-link" download>MIRAE ASSET COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/pgim-india-common-application-form.pdf" class="form-link" download>PGIM INDIA COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/icici mf.pdf" class="form-link" download>ICICI COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/hdfc form.pdf" class="form-link" download>HDFC COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/kotak-Common-KIM_Full.pdf" class="form-link" download>KOTAK COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/sbi form.pdf" class="form-link" download>SBI COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/LIC-MF-Common-Application-Form.pdf" class="form-link" download>LIC COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/canara mf form.pdf" class="form-link" download>CANARA COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/Bandhan-CAF.pdf" class="form-link" download>BANDHAN COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/TATAMFCOMMONAPPLICATIONFORM.pdf" class="form-link" download>TATA COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/nippon mf form.pdf" class="form-link" download>NIPPON COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/aditya birla mf.pdf" class="form-link" download>ABSL COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/WHITEOAK_COMMON_FORM.pdf" class="form-link" download>WHITEOAK COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/invesco_common-application-form.pdf" class="form-link" download>INVESCO COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/sundaram mf form.pdf" class="form-link" download>SUNDARAM COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/Quant mf form.pdf" class="form-link" download>QUANT COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/hsbc mf.pdf" class="form-link" download>HSBC COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/taurus mf form.pdf" class="form-link" download>TAURUS COMMON APPLICATION FORM (PDF)</a>
+      </div>
+      <div class="form-card">
+        <a href="Forms/Forms/Forms/axis mf form.pdf" class="form-link" download>AXIS COMMON APPLICATION FORM (PDF)</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="floating-button">
+    Get in touch
+ <div class="popup-menu">
+   <a href="tel:+918286689010 
+" target="_blank" class="menu-item">
+     <img src="img/phone-solid.svg" alt="Call Us">
+     Call Us
+   </a>
+   <a href="https://wa.link/jeuytx" target="_blank" class="menu-item">
+     <img src="img/whatsapp-brands-solid.svg" alt="WhatsApp Us">
+     WhatsApp Us
+   </a>
+   <a href="mailto:rashid.281989@gmail.com" target="_blank" class="menu-item">
+     <img src="img/envelope-solid.svg" alt="Send Message">
+     Send Message
+   </a>
+   <a href="https://www.instagram.com/thefundinvestmentservices?igsh=bGlqbHg2Z3MyaGp6" target="_blank" class="menu-item">
+    <img src="img/instagram.svg" alt="Instagram">
+    Instagram
+  </a>
+ </div>
+</div>
+
+   <!-- Footer Start -->
+<footer>
+ <div class="pt-5 text-center" id="contact-us">
+   <p class=" fw-bold h1-font" style="font-size: 30px;">Contact Us</p>
+   <p class="contact">  <i class="fas fa-map-marker-alt p-2 ps-0"></i>  82/3-B, Highland Corporate Center (High Street Mall),
+   Majiwada,Thane West- 400601</p>
+ <p class="contact">  <i class="fas fa-phone  p-2 ps-0"></i>  82866 89010</p>
+ <p class="contact"><i class="fas fa-envelope  p-2 ps-0"></i>    rashid.281989@gmail.com</p>
+<hr class="bg-dark">
+ <p class="text-center pt-3">&copy; 2024 The Fund Investment Services. All Rights Reserved.</p>
+</div>  
+   </footer>
+
+   <script>
+    function calculateSIP()
+    {
+        let monthlyInvestment = parseFloat(document.getElementById("monthlyInvestment").value); // Starting monthly investment
+        const duration = parseInt(document.getElementById("duration").value); // Duration in years
+        const stepUp = parseFloat(document.getElementById("stepUp").value) / 100; // Step up as a decimal
+        const rateOfReturn = parseFloat(document.getElementById("rateOfReturn").value) / 100; // Rate of return as a decimal
+    
+        let totalInvestedAmount = 0; // Total amount invested
+        let futureValue = 0; // Future value
+    
+        for (let year = 0; year < duration; year++) {
+            for (let month = 0; month < 12; month++) {
+                // Calculate future value at the end of each month
+                futureValue = (futureValue + monthlyInvestment) * (1 + rateOfReturn / 12);
+            }
+            // Increase monthly investment based on step-up percentage annually
+            totalInvestedAmount += monthlyInvestment * 12; // Add the yearly contribution to total invested amount
+            monthlyInvestment += monthlyInvestment * stepUp; // Increase the monthly investment
+        }
+        
+        // Add the last year's investment to the total invested amount
+        totalInvestedAmount += monthlyInvestment * 12;
+    
+        const estimatedReturns = futureValue - totalInvestedAmount; // Calculate estimated returns
+    
+        // Display results
+        document.getElementById("totalValue").innerText = futureValue.toFixed(0);
+        document.getElementById("investedAmount").innerText = totalInvestedAmount.toFixed(0);
+        document.getElementById("estimatedReturns").innerText = estimatedReturns.toFixed(0);
+        document.getElementById("years").innerText = duration;
+    
+        // Update pie chart dynamically
+        const investedPercentage = (totalInvestedAmount / futureValue) * 100;
+        document.querySelector('.pie-chart').style.backgroundImage = 
+        `conic-gradient(#49e9e9 0% ${investedPercentage}%, #ffff00 ${investedPercentage}% 100%)`;
+    }
+    
+    </script>
+    
+    <script>
+      function calculate() {
+        const goalAmount = parseFloat(document.getElementById("goalAmount").value);
+        const investmentYears = parseFloat(document.getElementById("investmentYears").value);
+        const expectedReturn = parseFloat(document.getElementById("expectedReturn").value) / 100;
+        const investmentType = document.getElementById("investmentType").value;
+      
+        // Ensure inputs are valid
+        if (isNaN(goalAmount) || isNaN(investmentYears) || isNaN(expectedReturn)) {
+          document.getElementById("result").innerHTML = "Please enter valid inputs.";
+          return;
+        }
+      
+        const months = investmentYears * 12;
+        const monthlyRate = expectedReturn / 12;
+      
+        let result = 0;
+      
+        if (investmentType === "sip") {
+          // SIP Formula: PMT = FV * r / [(1 + r)^n - 1] * (1 + r)
+          result = goalAmount * (monthlyRate / ((Math.pow(1 + monthlyRate, months) - 1) * (1 + monthlyRate)));
+        } else if (investmentType === "lumpsum") {
+          // Lump Sum Formula: PV = FV / (1 + r)^n (Use annual rate for lump sum)
+          result = goalAmount / Math.pow(1 + expectedReturn, investmentYears);
+        }
+      
+        document.getElementById("result").innerHTML = `You need to invest <span style="font-weight: bold;"> ₹${result.toFixed(2)}</span> ${investmentType === "sip" ? 'per month' : 'lump sum'} to reach your goal of ₹${goalAmount} in ${investmentYears} years.`;
+      }
+    </script>
+    
+
+      
+<!-- Footer End -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,562 @@
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+  background-color: black;
+}
+.mgtcolor{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+padding-top: 2px;
+}
+.hero-img {
+  position: relative; /* Establishes a positioning context */
+}
+
+.hero-img img {
+  width: 100%; /* Ensures the images take full width */
+  height: auto; /* Keeps the aspect ratio */
+  opacity: 0.25; /* Adjust the opacity for the hero image */
+}
+
+
+
+.money {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+* {
+  font-family: "Poppins", sans-fif;
+}
+
+.h1-font {
+  font-family: "Merriweather", serif;
+}
+
+.pop:hover {
+  background-color: green;
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.pop1:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.fundcard {
+  width: 19rem; 
+  height: 22rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.fundcard:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.heading {
+  border: 3px solid #49e9e9;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  height: 350px;
+}
+.footerhome
+{
+  height: 430px;
+}
+
+.contact:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  height: 60px;
+  background-color: #49e9e9;
+  border-radius: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(11, 21, 48, 0.926);
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.popup-menu {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.floating-button:hover .popup-menu {
+  display: flex;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+.strip
+{
+  margin-bottom: -147px;
+}
+
+#heading1
+{
+  color: white;
+ 
+}
+#logo
+{
+ 
+  height: 100px;
+  width: 150px;
+}
+
+hr
+{
+  color: white;
+  background-color: white;
+  height: 2px;
+  margin-top: 0;
+}
+
+.ticker_section {
+  padding: 5px 15px;
+  background-color: var(--rv-black);
+  display: flex;
+  margin-top: -15px;
+}
+.ticker_section .tickers {
+  display: flex;
+  margin: -10px;
+  align-items: center;
+  justify-content: center;
+}
+.ticker_section .tickers .ticker_item {
+  padding: 10px;
+  color: var(--rv-white);
+  list-style: none;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.ticker_section .tickers .ticker_item .name {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.ticker_section .tickers .ticker_item .price {
+  font-size: 12px;
+  padding: 4px 5px 0;
+}
+.ticker_section .tickers .ticker_item.mrdown .difference_percent {
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-right: 30px;
+  position: relative;
+  background: rgb(255, 101, 101);
+  border: 1px solid #ffffff00;
+  color: var(--rv-white);
+}
+.ticker_section .tickers .ticker_item.mrdown .difference_percent::after {
+  content: "";
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  background-image: url("../images/decrease.webp");
+  background-size: 100%;
+  filter: brightness(0) invert(1);
+  background-repeat: no-repeat;
+}
+.ticker_section .tickers .ticker_item .difference_percent {
+  background: rgba(31, 247, 96, 0.626);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #018a4d00;
+  font-weight: 600;
+  padding-right: 30px;
+  position: relative;
+  color: var(--rv-white);
+}
+.ticker_section .tickers .ticker_item .difference_percent::after {
+  content: "";
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  right: 7px;
+  background-image: url("../images/trend.webp");
+  background-size: 100%;
+  filter: brightness(0) invert(1);
+  background-repeat: no-repeat;
+  top: 5px;
+}
+.ticker_section .tickers .ticker_item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 80%;
+  width: 2px;
+  background: var(--rv-white);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+.ticker_section .tickers .ticker_item:last-child::after {
+  content: unset;
+}
+.h-10
+{
+  object-fit: cover;
+ margin-bottom: -40px;
+}
+.meet:hover{
+transform: scale(1.03);
+transition: all 0.3s;
+}
+
+
+
+.bd {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color:rgb(234, 237, 237);
+
+}
+.calculator {
+  display: flex;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+}
+.inputs, .results {
+  padding: 20px;
+  width: 50%;
+}
+.inputs input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.results {
+  background-color: #f3f3f6;
+  text-align: center;
+}
+.results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.results p {
+  font-size: 18px;
+}
+.pie-chart {
+  height: 150px;
+  width: 150px;
+  margin: 20px auto;
+  background-image: conic-gradient(
+      #49e9e9 0% 70%,
+      #ffff00 70% 100%
+  );
+  border-radius: 50%;
+}
+.calculate-btn {
+  padding: 10px 20px;
+  background-color: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.calculate-btn:hover {
+  background-color: #3d54cc;
+}
+
+.carousel {
+  display: flex; /* Ensures the cells are side by side */
+  overflow-x: auto; /* Enables horizontal scrolling if necessary */
+}
+
+.carousel-cell {
+  width: 40%; /* Set width for cells */
+  height: 350px; /* Ensure consistent height */
+  margin-right: 10px; /* Space between cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories-item {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center align items */
+  width: 100%; /* Ensure it takes full width */
+  height: 100%; /* Ensure it takes full height */
+  background: #fff;
+  border: 2px solid #49e9e9;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, .4);
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px; /* Padding around content */
+  transition: box-shadow .3s ease-out, transform .3s ease-out;
+}
+
+.categories-item img {
+  max-width: 66%; /* Makes the image responsive */
+  height: auto; /* Keeps the aspect ratio */
+  object-fit: contain; /* Fits the image within the container */
+}
+
+.categories-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #222222;
+  margin-top: 20px; /* Space between image and title */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .carousel-cell {
+      width: 50%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-cell {
+      width: 100%; /* Stack items vertically on very small screens */
+  }
+}
+@media (max-width: 768px) {
+  h1, h2, h3 {
+      font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  .footerhome
+  {
+    height: 470px;
+  }
+  
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .btn {
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+  }
+
+  .get-in-touch-btn {
+      position: relative; /* Or any positioning that suits your design */
+      margin-top: 1rem;
+      width: 100%; /* Full width on mobile for better visibility */
+  }
+
+  .section {
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .container img {
+      max-width: 100%;
+      height: auto;
+  }
+  #heading1
+  {
+    font-size: 25px !important;
+    padding-left: 30px;
+    display: flex;
+    
+    margin-bottom: -50px;
+    margin-top: -40px;
+  }
+ 
+  #logo
+  {
+    height: 30px;
+    width: 60px;
+    padding-bottom: -40px;
+    margin-left: 50px;
+  }
+.navbar-toggler-icon
+{
+  
+  margin-right: -700px;
+  color: #ccc;
+  margin-top: -1px;
+}
+
+  /* Adjust the font size for the heading on smaller screens */
+  .navbar-brand {
+      font-size: 20px; /* Decrease the font size */
+      white-space: normal; /* Allow text to wrap to the next line */
+      line-height: 1.2; /* Adjust line height */
+      text-align: center; /* Center align text */
+  }
+
+  /* Adjust the button style on smaller screens */
+  .get-in-touch-button {
+      padding: 8px 16px; /* Adjust the padding */
+      font-size: 12px; /* Decrease the font size */
+      display: block; /* Ensure the button takes full width */
+      width: 100%; /* Full width on mobile */
+      text-align: center; /* Center the text inside the button */
+      margin: 10px 0; /* Add some margin */
+  }
+
+  /* Ensure the main heading fits within the screen */
+  .heading {
+      font-size: 1.5rem; /* Adjust the font size */
+      padding: 10px; /* Adjust padding */
+      margin: 10px 0; /* Adjust margin */
+  }
+
+  /* Adjust sections to ensure content fits within the screen */
+  .about-us-section {
+      padding: 15px;
+  }
+
+  /* Ensure no horizontal scrolling */
+  body, html {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
+.card {
+  margin: 20px auto; /* Center cards in their columns */
+}
+
+@media (max-width: 768px) {
+  h2.meet {
+      font-size: 28px; /* Adjust heading size */
+      margin-left: 0; /* Center align heading */
+      width: 100%; /* Full width on smaller screens */
+      align-items: center;
+      justify-content: center;
+  }
+
+  .card {
+      width: 70%; /* Full width on small screens */
+
+      align-items: center;
+      justify-content: center;
+  }
+
+  .card-text {
+      font-size: 14px; /* Reduce font size for better readability */
+
+  }
+}
+
+
+@media (max-width: 576px) {
+  h2.meet {
+      font-size: 24px; /* Further reduce heading size */
+  }
+
+  .card-text {
+      font-size: 12px; /* Make the text smaller on very small screens */
+  }
+  .cinfo
+  {
+    margin-left: -70px;
+  }
+  .team 
+  {
+    padding: 10px;
+  }
+
+ 
+}
+.im-1
+{
+  height: 200px;
+}
+@media (max-width: 360px)
+{
+  #heading1
+  {
+    font-size: 20.4px !important;
+    padding-left: 30px;
+    display: flex;
+    
+    margin-bottom: -40px;
+  }
+ 
+  #logo
+  {
+    height: 30px;
+    width: 60px;
+    padding-bottom: -40px;
+    margin-left: 50px;
+  }
+.navbar-toggler-icon
+{
+  
+  margin-right: -600px;
+  color: #ccc;
+  margin-top: -7px;
+}
+
+}
